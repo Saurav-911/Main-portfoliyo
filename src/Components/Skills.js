@@ -29,8 +29,8 @@ export default function Skills() {
           <img src={dotnet} alt="" className="img" height={70} width={70}/>
           <p>.Net</p>
         </div>
-        <div className="container " style={{background:"#1E293B",display:"flex", flexDirection:"column",justifyContent:"center",alignItems:"center",gap:"10px",height:"150px",boxShadow:"0 0px 5px #1E293B, 0 0px 10px #1E293B"}}>
-          <img src={tableau} alt="" className="img" height={70} width={70}/>
+        <div className="container " style={{background:"#1E293B",display:"flex", flexDirection:"column",justifyContent:"center",alignItems:"center",gap:"10px",height:"150px",boxShadow:"0 0px 5px #1E293B, 0 0px 10px #1E293B" }}>
+          <img src={tableau} alt="" className="img" height={70} width={70}  />
           <p>Tableau</p>
         </div>
         <div className="container " style={{background:"#1E293B",display:"flex", flexDirection:"column",justifyContent:"center",alignItems:"center",gap:"10px",height:"150px",boxShadow:"0 0px 5px #1E293B, 0 0px 10px #1E293B"}}>

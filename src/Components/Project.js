@@ -1,8 +1,12 @@
 import React from 'react'
 import project from './pic/project.png'
+import projects from './pic/project2.png'
 export default function Project() {
   const project1=()=>{
     window.open("https://saurav-911.github.io/first-project/", "_blank", "noopener,noreferrer");
+  }
+  const project2=()=>{
+    window.open("https://github.com/Saurav-911/python-drug-management-system", "_blank", "noopener,noreferrer");
   }
   return (
 //main container
@@ -26,12 +30,12 @@ export default function Project() {
       {/*tertiary 2nd container*/ }
       <div className="container" style={{background:"#1E293B", display:"grid", gridTemplateColumns:"1fr 2fr",padding:"20px",borderRadius:"10px"}}>
        <div className="container" style={{background:"#0F172A",height:"125px",width:"120px",borderRadius:"10px"}}>
-          <img src={project} alt="project" height={110} width={110} justifyContent={"center"}/>
+          <img src={projects} alt="project" height={100} width={100} justifyContent={"center"}/>
         </div>
         <div className="container" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"start",gap:"1  px"}}>
-          <h2>Testutils2</h2>
-          <p>React1</p>
-          <button className='btn' style={{background:"transprent",color:"white",border:" 1px solid #38BDF8"}}>open project</button>
+          <h2>Drug Management System</h2>
+          <p>python</p>
+          <button className='btn' style={{background:"transprent",color:"white",border:" 1px solid #38BDF8"}} onClick={project2}>open project</button>
         </div>
         </div>
     </div>
