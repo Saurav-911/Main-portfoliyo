@@ -27,7 +27,7 @@ export default function Education() {
     }}>
        <h2 style={{alignSelf:"center"}}>My Education</h2>
       
-       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(400px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
        <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
        <img onClick={orc} src={orchidLogo} alt="logo" style={{height:"150px",cursor:"pointer"}}/>
        </div>
@@ -38,7 +38,7 @@ export default function Education() {
         <p  >GPA: 3.70 </p></div>
        </div>
       
-       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(400px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
        <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
        <img onClick={kmc} src="https://kmcen.edu.np/wp-content/uploads/2023/09/kmc-college-300x192.png" alt="logo" style={{height:"150px",cursor:"pointer"}}/>
        </div>
@@ -48,7 +48,7 @@ export default function Education() {
         <p >2021–2023  </p></div>
         <p  >GPA: 3.62 </p></div>
        </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(400px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
        <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
        <img onClick={lbef1} src={lbef} alt="logo" style={{width:200 , height:"150px",cursor:"pointer"}}/>
        </div>

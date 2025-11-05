@@ -16,11 +16,17 @@ export default function About() {
       <div className="container" style={{textAlign:"left  ",color:"white",display:"flex",justifyContent:"start",alignItems:"start",gap:"10px",flexDirection:"column"}}>
         
         <h1>About Me</h1>
-        <p>Video provides a powerful way to help you prove your point. When you click Online Video,
-          you can paste in the embed code for the video you want to add. You can also type a
-          keyword to search online for the video that best fits your document. To make your 
-          document look professionally produced, 
-          Word provides header, footer, cover page, and text box designs that complement each other.</p>
+        <p>Hi! I’m Saurav, a passionate Frontend Developer who loves turning ideas into interactive, 
+          visually engaging web experiences. I enjoy crafting clean, responsive, and user-friendly 
+          interfaces using modern tools like React, JavaScript, HTML, and CSS.<br/>
+ 
+          I’m constantly exploring new technologies to stay up to date with the latest web trends and 
+          improve my development workflow. My focus is not just on writing code but on building digital
+           experiences that look great and feel intuitive across all devices.<br/>
+
+          Beyond coding, I enjoy solving design challenges, experimenting with creative UI animations, 
+          and collaborating with others to bring ideas to life. My goal is to keep learning, building, 
+          and pushing boundaries in the front-end world.</p>
       </div>
     </div>
   )
