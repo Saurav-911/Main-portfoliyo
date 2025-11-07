@@ -3,7 +3,7 @@ import github from './pic/github.png'
 import linkedin from './pic/linkdin.png'
 import instagram from './pic/icons8-insta-48.png'
 
-export default function Contact() {
+export default function Contact(props) {
   const githublink=()=>{
     window.open("https://github.com/Saurav-911");
   }
@@ -20,7 +20,7 @@ export default function Contact() {
 
 
   return (
-    <div  style={{background:"#0A0F1E",marginTop:100,color:"white",display:"flex",flexDirection:"column",alignItems:"center",gap:"20px",paddingTop:50,paddingBottom:50}}>
+    <div  style={{background:`${props.mode==="dark"?"#0A0F1E":"#F9FAFB"}`,marginTop:100,color:`${props.mode==="dark"?"white":"black"}`,display:"flex",flexDirection:"column",alignItems:"center",gap:"20px",paddingTop:50,paddingBottom:50}}>
       <div className="container" style={{display:"flex",flexDirection:"column",alignItems:"center",
         gap:"10px",width:"auto",border:" 4px solid transprent",borderRadius:"10px",padding:"20px",
         outline:"none",transition:" box-shadow 0.3s ease-in-out",boxShadow: "0 0 10px #00C6FF, 0 0 20px #7D3CFF",flexWrap:"wrap"}}>

@@ -1,10 +1,10 @@
 import React from 'react'
 import about from './pic/about.png'
-export default function About() {
+export default function About(props) {
   return (
     //main container
     <div className="container" style={{height:"auto",width:"auto", background:"#1E293B"
-      ,backgroundImage:"linear-gradient(to right,#0F172A,#1E293B,#0F172A)",display:"grid"
+      ,backgroundImage:`linear-gradient(to right${props.mode==="dark"?",#0F172A,#1E293B,#0F172A":",#ffffff,#f5f5f5,#ffffff"})`,display:"grid"
     ,backgroundClip: "padding-box, border-box  "
     ,gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"10px",paddingBottom:40
     ,paddingTop:40,boxShadow:"0 0px 5px #1E293B, 0 0px 10px #1E293B",alignItems:"center"}}>
@@ -13,7 +13,7 @@ export default function About() {
         <img src={about} alt="" className='img' width={200} height={200}/>
       </div>
       {/*secondary 2nd container*/ }
-      <div className="container" style={{textAlign:"left  ",color:"white",display:"flex",justifyContent:"start",alignItems:"start",gap:"10px",flexDirection:"column"}}>
+      <div className="container" style={{textAlign:"left  ",color:`${props.mode==="dark"?"white":"#0F172A"}`,display:"flex",justifyContent:"start",alignItems:"start",gap:"10px",flexDirection:"column"}}>
         
         <h1>About Me</h1>
         <p>Hi! I’m Saurav, a passionate Frontend Developer who loves turning ideas into interactive, 

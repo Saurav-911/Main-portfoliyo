@@ -4,18 +4,18 @@ import t2 from './pic/profile1.png'
 import react from'./pic/react.png'
 import js from'./pic/js.png'
 import '../App.css';
-export default function Home() {
+export default function Home(props) {
 
   const handlecv=()=>{
     window.open("https://drive.google.com/file/d/1qqArwZb1Ioj8O-zF5OLd_xye7qZHOMVi/view?usp=sharing", "_blank", "noopener,noreferrer");
   }
   return (
   //Main  container
-    <div className="container" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",color:"white",height:"auto",paddingBottom:100,paddingTop:100}}>
+    <div className="container" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",color:`${props.mode==="dark"?"white":"#0F172A"}`,height:"auto",paddingBottom:100,paddingTop:100}}>
     {/*secondary 1st container*/ }
       <div className="container"style={{display:"flex",flexDirection:"column",alignItems:"start",justifyContent:"center",height:"300px",gap:"20px",flexShrink:"0"}}>
        
-       <h1>HII, I'M Saurav</h1>
+       <h1>HII, I'M <span style={{color:"#38BDF8"}}>Saurav</span></h1>
        <div style={{flexGrow:".5"}}>
        <img src={hi}alt="img" width={30} height={30}/>
        <h4>Frontend developer</h4>
@@ -28,8 +28,8 @@ export default function Home() {
       <img src={react} alt="" className="img" style={{alignSelf:"flex-start",filter:"drop-shadow(0px 0px 30px rgba(56,189,248,0.5))",animation:"spin 4s linear infinite"}}/>
       
       <div style={{display:"grid"}}>
-      <div style={{backgroundColor:"#141e34ff",height:"200px",width:"auto",border:"3px solid #464a53ff",borderRadius:"100px",gridArea:"1/2"}}></div>
-      <img className="img " src={t2} alt="background" style={{gridArea:"1/2",filter: "drop-shadow(0px 0px 20px rgba(56,189,248,0.5))"}} />
+      <div style={{backgroundColor:`${props.mode==="dark"?"#141e34ff":"#FFFFFF"}`,height:"200px",width:"auto",border:"3px solid ",borderColor: `${props.mode==="dark"?"#464a53ff":"#E5E7EB"}`,borderRadius:"100px",gridArea:"1/2"}}></div>
+      <img className="img " src={t2} alt="background" style={{gridArea:"1/2",filter: `drop-shadow( ${props.mode==="dark"?"0px 0px 20px rgba(56,189,248,0.5)":"0px 0px 20px rgba(0, 0, 0, 0.15)"})`}} />
       </div>
       <img src={js} alt="" className="img" />
       </div>

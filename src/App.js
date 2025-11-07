@@ -6,19 +6,32 @@ import Skills from './Components/Skills';
 import Project from './Components/Project';
 import Contact from './Components/Contact';
 import Education from './Components/Education';
-
+import React,{useState} from 'react';
 function App() {
-  <style/>
+  
+  const[mode,setMode]=useState("dark"); 
     
+  const toggle=()=>
+  {
+  if(mode==="light"){
+    
+    document.body.style.backgroundColor = '#0F172A';
+    setMode("dark")
+  }
+  else{
+    document.body.style.backgroundColor = '#F5F5F5';
+    setMode("light")
+  }
+  }
   return (
   <>
-  <Navigation/>
-  <section className="Home"><Home/></section>
-  <section className="About"><About/></section>
-  <section className="Skills"><Skills/></section>
-  <section className="Project"><Project/></section>
-  <section className="Education"><Education/></section>
-  <section className="Contact"><Contact/></section>
+  <Navigation toggle={toggle} mode={mode}/>
+  <section className="Home"><Home mode={mode}/></section>
+  <section className="About"><About mode={mode}/></section>
+  <section className="Skills"><Skills mode={mode}/></section>
+  <section className="Project"><Project mode={mode}/></section>
+  <section className="Education"><Education mode={mode}/></section>
+  <section className="Contact"><Contact mode={mode}/></section>
 
   </>
   );
