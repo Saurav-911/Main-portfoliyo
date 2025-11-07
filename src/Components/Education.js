@@ -38,15 +38,16 @@ export default function Education(props) {
         <p  >GPA: 3.70 </p></div>
        </div>
       
-       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
-       <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-       <img onClick={kmc} src="https://kmcen.edu.np/wp-content/uploads/2023/09/kmc-college-300x192.png" alt="logo" style={{height:"150px",cursor:"pointer"}}/>
-       </div>
-       <div className="container" style={{height:"auto",background:"#1E293B",backgroundImage:`linear-gradient(to right,${`${props.mode==="dark"?"#0F172A,#1E293B,#0F172A":"#f5f5f5,white,#f5f5f5"}`})`,borderRadius: "10px",display:"flex",alignItems:"start",justifyContent:"center",flexDirection:"column"}}>
+       <div id="change" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+        <div className="container" style={{height:"auto",background:"#1E293B",backgroundImage:`linear-gradient(to right,${`${props.mode==="dark"?"#0F172A,#1E293B,#0F172A":"#f5f5f5,white,#f5f5f5"}`})`,borderRadius: "10px",display:"flex",alignItems:"start",justifyContent:"center",flexDirection:"column"}}>
         <div  style={{display:"grid",gridTemplateColumns:"5fr 1fr"}}>
         <h3 onClick={kmc} style={{cursor:"pointer"}}>KATHMANDU MODEL SECONDARY SCHOOL (Bagbazar)</h3> 
         <p >2021–2023  </p></div>
         <p  >GPA: 3.62 </p></div>
+       <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+       <img onClick={kmc} src="https://kmcen.edu.np/wp-content/uploads/2023/09/kmc-college-300x192.png" alt="logo" style={{height:"150px",cursor:"pointer"}}/>
+       </div>
+       
        </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
        <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>

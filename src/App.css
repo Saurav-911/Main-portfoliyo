@@ -9,3 +9,23 @@ body{
     transform: rotate(360deg);
   }
 } 
+
+
+@media (max-width: 991.5px) {
+  #haha> div:nth-child(2) {
+    order: -1;
+  }
+}
+
+@media (max-width: 991.5px) {
+  #change> div:nth-child(2) {
+    order: -1;
+  }
+}
+
+@media (max-width: 991.5px){
+  #center{
+    display: flex;
+    align-items: center;
+  }
+}
