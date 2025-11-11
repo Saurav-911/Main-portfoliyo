@@ -49,7 +49,7 @@ export default function Education(props) {
        </div>
        
        </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center",marginBottom:"20px"}}>
        <div className='container' style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
        <img onClick={lbef1} src={lbef} alt="logo" style={{width:200 , height:"150px",cursor:"pointer"}}/>
        </div>
