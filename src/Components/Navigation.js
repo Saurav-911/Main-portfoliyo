@@ -9,7 +9,7 @@ export default function Navigation(props) {
       <div  style={{justifySelf:"start",cursor:"pointer" }} >
       <Link  className={`navbar-brand text-${props.mode==="light"?"black":"white"}`} to="/" >Saurav</Link>
       </div >
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className={`navbar-toggler`} style={{ filter: `${props.mode==="dark"?"invert(1)":""}` }}    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
       <span className="navbar-toggler-icon"></span>
     </button> 
       <div className="collapse navbar-collapse " id="navbarSupportedContent">
