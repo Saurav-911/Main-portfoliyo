@@ -12,13 +12,13 @@ body{
 
 
 @media (max-width: 991.5px) {
-  #haha> div:nth-child(2) {
+  #home_main> div:nth-child(2) {
     order: -1;
   }
 }
 
 @media (max-width: 991.5px) {
-  #change> div:nth-child(2) {
+  #Educatio_Kmc_change> div:nth-child(2) {
     order: -1;
   }
 }
@@ -27,5 +27,6 @@ body{
   #center{
     display: flex;
     align-items: center;
+    
   }
 }

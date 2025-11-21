@@ -38,7 +38,7 @@ export default function Education(props) {
         <p  >GPA: 3.70 </p></div>
        </div>
       
-       <div id="change" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
+       <div id="Educatio_Kmc_change" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",gap:"20px",justifyContent:"center",alignContent:"center"}}>
         <div className="container" style={{height:"auto",background:"#1E293B",backgroundImage:`linear-gradient(to right,${`${props.mode==="dark"?"#0F172A,#1E293B,#0F172A":"#f5f5f5,white,#f5f5f5"}`})`,borderRadius: "10px",display:"flex",alignItems:"start",justifyContent:"center",flexDirection:"column"}}>
         <div  style={{display:"grid",gridTemplateColumns:"5fr 1fr"}}>
         <h3 onClick={kmc} style={{cursor:"pointer"}}>KATHMANDU MODEL SECONDARY SCHOOL (Bagbazar)</h3> 

@@ -14,7 +14,7 @@ export default function Home(props) {
   
   return (
   //Main  container
-    <div className="container" id="haha" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",color:`${props.mode==="dark"?"white":"#0F172A"}`,height:"auto",paddingBottom:100,paddingTop:100 }}>
+    <div className="container" id="home_main" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(350px,1fr))",color:`${props.mode==="dark"?"white":"#0F172A"}`,height:"auto",paddingBottom:100,paddingTop:100 }}>
     {/*secondary 1st container*/ }
       <div className="container" id="center" style={{display:"flex",flexDirection:"column",justifyContent:"center",height:"300px",gap:"20px",flexShrink:"0"}}>
        

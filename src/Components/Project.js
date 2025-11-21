@@ -19,7 +19,7 @@ export default function Project(props) {
         <div className="container" style={{background:`${props.mode==="dark"?"#1E293B":"#f5f5f5"}`,height:"125px",width:"120px",borderRadius:"10px"}}>
           <img src={project} alt="project" height={110} width={110} justifyContent={"center"}/>
         </div>
-        <div className="container" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"start",gap:"1  px"}}>
+        <div className="container" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"start",gap:"1px"}}>
           <h2>Text utils</h2>
           <p>React</p>
           <button className='btn' style={{background:"transprent",color:`${props.mode==="dark"?"#ffffffff":"#1E293B"}`  ,border:" 1px solid #38BDF8"}} onClick={project1}>open project</button>
