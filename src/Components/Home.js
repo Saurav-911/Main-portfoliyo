@@ -1,8 +1,9 @@
 import React from 'react'
 import hi from './pic/hii.png'
-import t2 from './pic/profile1.png'
+// import t2 from './pic/profile1.png'
 import react from'./pic/react.png'
 import js from'./pic/js.png'
+import me from'./pic/me1.png'
 import '../App.css';
 export default function Home(props) {
 
@@ -32,7 +33,7 @@ export default function Home(props) {
       
       <div style={{display:"grid"}}>
       <div style={{backgroundColor:`${props.mode==="dark"?"#141e34ff":"#FFFFFF"}`,height:"200px",width:"auto",border:"3px solid ",borderColor: `${props.mode==="dark"?"#464a53ff":"#E5E7EB"}`,borderRadius:"100px",gridArea:"1/2"}}></div>
-      <img className="img " src={t2} alt="background" style={{gridArea:"1/2",filter: `drop-shadow( ${props.mode==="dark"?"0px 0px 20px rgba(56,189,248,0.5)":"0px 0px 20px rgba(0, 0, 0, 0.15)"})`}} />
+      <img className="img " src={me } alt="background" style={{gridArea:"1/2",height:"233px",width:"177px",filter: `drop-shadow( ${props.mode==="dark"?"0px 0px 20px rgba(56,189,248,0.5)":"0px 0px 20px rgba(0, 0, 0, 0.15)"})`}} />
       </div>
       <img src={js} alt="" className="img" />
       </div>
